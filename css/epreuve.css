@@ -1,0 +1,60 @@
+.debut{
+    margin-top: 14%;
+    position: relative;
+}
+
+#fond{
+    background: #3a3a3a;
+    padding-bottom: 60px;
+}
+
+#epreuve{
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorie{
+    margin: 20px 20% 0 20%;
+    background: linear-gradient(45deg,rgba(31, 31, 31, 0.6),rgba(31, 31, 31, 0.6)), url("../image/banniere.png");
+    border-radius: 25px;
+    padding: 2% 5%;
+}
+
+.cat{
+    font-size: xx-large;
+    color: #FFCF33;
+    padding-left: 2.5em;
+    margin: 0 1.5em;
+    font-family: Arial, Helvetica;
+}
+
+.categorie a{
+    color:#fff;
+    font-family: Arial, Helvetica;
+}
+
+.parcours{
+    background: #3a3a3a;
+    margin-top: 5em;
+    padding: 0 0 2% 0;
+    text-align: center;
+}
+
+.plac-parc{
+    margin:20 20% 0 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20%;
+}
+
+.circuit{
+    width: 30em;
+}

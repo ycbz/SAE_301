@@ -1,0 +1,186 @@
+.debut{
+    margin-top: 14%;
+    position: relative;
+}
+/*-------Timeline------*/
+#timeline {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 80000;
+}
+.arbre{
+  padding: 6em 0;
+  background-image: linear-gradient( rgba(31, 31, 31, 0.7),rgba(31, 31, 31, 0.7)), url("../image/fond-arbretrois.png");
+  background: cover;
+  background-position: top;
+  background-size: 100% ;
+  z-index: -8000;
+  margin: 20px 0;
+  width: 100%;
+}
+#timeline .timeline-debut,
+#timeline .timeline-fin,
+#timeline .timeline-lendemain {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#timeline .timeline-lendemain{
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+#timeline .ligne {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: -1;
+}
+#timeline .timeline-contenu {
+  padding: 67px 0;
+}
+.article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.article .container-contenu-gauche,
+.article .container-contenu-droit {
+  max-width: 44%;
+  width: 100%;
+}
+.article .contenu-gauche{
+  background: linear-gradient(45deg,rgba(188, 44, 26, 0.8),rgba(195, 157, 99, 0.8));
+}
+.article .contenu-droit{
+  background: linear-gradient(135deg,rgba(195, 157, 99, 0.8),rgba(188, 44, 26, 0.8));
+}
+.article .contenu-gauche,
+.article .contenu-droit {
+  position: relative;
+  width: auto;
+  padding: 25px 25px;
+  border-radius: 30px;
+}
+.article p {
+  margin: 0 ;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+
+.article .container-contenu-gauche {
+  float: left;
+}
+.article .container-contenu-droit {
+  float: right;
+}
+.article .contenu-gauche:before,
+.article .contenu-droit:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: Arial, Helvetica, serif;
+  color: #fff;
+}
+.article .contenu-gauche:before {
+  right: -8px;
+}
+.article .contenu-droit:before {
+  left: -8px;
+}
+.article .boule-horaire {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 73px;
+  height: 73px;
+  margin-left: -37px;
+  color: #fff;
+  border-radius: 100%;
+}
+.article .boule-horaire .jour,
+.article .boule-horaire .heure {
+  display: block;
+  text-align: center;
+  
+  font-weight: 900;
+}
+.article .boule-horaire .jour {
+  font-size: 24px;
+  line-height: 40px;
+}
+.article .boule-horaire .heure {
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.espacementjour{
+  margin-top: 8em;
+}
+
+.article .boule-horaire,
+#timeline .ligne,
+#timeline .timeline-debut,
+#timeline .timeline-fin,
+#timeline .timeline-lendemain{
+  background-color: rgba(195, 157, 99, 1);
+}
+/*--------Fin timeline---------------*/
+
+
+
+/*-------- responsive de la timeline --------*/
+@media only screen and (max-width: 830px) {
+#timeline .timeline-debut,
+#timeline .timeline-fin {
+  margin: 0;
+}
+#timeline .timeline-lendemain{
+  margin: 3em 0 5em 0;
+}
+#timeline .ligne {
+  margin-left: 0;
+  left: 50px;
+}
+.article .boule-horaire {
+  margin-left: 0;
+  left: 14.5px;
+}
+.article .container-contenu-gauche,
+.article .container-contenu-droit {
+  max-width: 100%;
+  width: auto;
+  float: none;
+  margin-left: 110px;
+  min-height: 53px;
+}
+.article .container-contenu-gauche,
+.article .contenu-droit {
+  margin-bottom: 20px;
+}
+.article .contenu-gauche,
+.article .contenu-droit {
+  padding: 10px 25px;
+  min-height: 65px;
+}
+
+}
+/*--------Fin du responsive de Timeline --------*/

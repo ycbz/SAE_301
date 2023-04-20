@@ -1,0 +1,49 @@
+.debut{
+    margin-top: 14%;
+    position: relative;
+}
+.presentation-conf{
+    background: linear-gradient( rgba(180, 164, 164, 0.6),rgba(31, 31, 31, 0.6));
+    margin-top: 2em;
+    padding: 2em 0;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+}
+.conf-titre{
+    font-size: xx-large;
+    color: #1B539D;
+    background-color: #C39D63;
+    border-radius: 25px;
+    padding-left: 2.5em;
+    margin: 0 1.5em;
+    font-family: Arial, Helvetica;
+}
+.espace{
+    padding-bottom: 2.5em;
+}
+
+.bouton-admin{
+    text-align: center;
+    font-family: Arial, Helvetica;
+    background: linear-gradient(45deg,rgba(188, 44, 26, 0.6),rgba(195, 157, 99, 0.6));
+    border-radius: 20px;
+    margin: 3em 20%;
+}
+#button{
+    background: linear-gradient(135deg,rgba(195, 157, 99, 0.6),rgba(188, 44, 26, 0.6));
+    border-radius: 20px;
+    padding: 1em 2.5em;
+    margin: 1em 0;
+    border: none;
+    transition: 0.6s;
+}
+
+#select{
+    background-color: #C39D63;
+    border: none;
+}
